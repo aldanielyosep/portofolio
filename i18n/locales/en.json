@@ -1,8 +1,37 @@
 {
   "common": {
     "title": "Daniel Yosep Portfolio",
-    "description": "Nuxt 4 portfolio foundation is ready.",
+    "description": "A multilingual portfolio crafted with Nuxt 4, built for performance and clarity.",
     "switchLanguage": "Switch language",
     "toggleTheme": "Toggle theme"
+  },
+  "layout": {
+    "phaseReady": "Phase 4 layout is live",
+    "menu": "Menu",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "scrollToTop": "Scroll to top",
+    "languageShort": {
+      "en": "EN",
+      "id": "ID"
+    },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": {
+      "tagline": "Engineering thoughtful digital products."
+    },
+    "placeholder": {
+      "about": "About section scaffolding is ready for your profile narrative and values.",
+      "projects": "Projects area is prepared for featured work cards and case studies.",
+      "contact": "Contact block placeholder is ready for links and contact form."
+    }
   }
 }

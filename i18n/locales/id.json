@@ -1,8 +1,37 @@
 {
   "common": {
     "title": "Portofolio Daniel Yosep",
-    "description": "Fondasi portofolio Nuxt 4 sudah siap.",
+    "description": "Portofolio multibahasa berbasis Nuxt 4 yang dirancang cepat dan jelas.",
     "switchLanguage": "Ganti bahasa",
     "toggleTheme": "Ubah tema"
+  },
+  "layout": {
+    "phaseReady": "Layout Phase 4 sudah aktif",
+    "menu": "Menu",
+    "openMenu": "Buka menu navigasi",
+    "closeMenu": "Tutup menu navigasi",
+    "scrollToTop": "Kembali ke atas",
+    "languageShort": {
+      "en": "EN",
+      "id": "ID"
+    },
+    "theme": {
+      "light": "Terang",
+      "dark": "Gelap"
+    },
+    "nav": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "projects": "Proyek",
+      "contact": "Kontak"
+    },
+    "footer": {
+      "tagline": "Membangun produk digital dengan ketelitian engineering."
+    },
+    "placeholder": {
+      "about": "Kerangka section Tentang siap untuk narasi profil dan nilai pribadi.",
+      "projects": "Area proyek siap untuk kartu karya unggulan dan studi kasus.",
+      "contact": "Placeholder kontak siap untuk tautan dan form kontak."
+    }
   }
 }
