@@ -1,8 +1,16 @@
 # Daniel Yosep Portfolio
 
-A modern, fast, and bilingual personal portfolio website built with **Nuxt 4**.
+[![CI](https://github.com/<username>/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/portfolio/actions/workflows/ci.yml)
 
-This website showcases my professional experience, technical skills, career journey, AI projects, and engineering leadership.
+![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?logo=nuxt)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?logo=cloudflare)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A modern, fast, and bilingual personal portfolio built with **Nuxt 4**.
+
+This website showcases my professional experience, technical expertise, engineering leadership, AI projects, and career journey.
 
 > 🚧 Currently under active development.
 
@@ -10,48 +18,50 @@ This website showcases my professional experience, technical skills, career jour
 
 ## ✨ Features
 
-- 🌐 Bilingual (English & Indonesian)
-- 📱 Fully Responsive
+- 🌐 English & Indonesian
+- 📱 Responsive Design
 - 🌙 Dark / Light Mode
 - ⚡ Static Site Generation (SSG)
 - 🔍 SEO Optimized
 - 📄 Downloadable Resume (CV)
 - 💼 Career Timeline
-- 🛠 Skills & Technologies
+- 🛠 Technical Skills
 - 🚀 Project Portfolio
 - 🤖 AI Portfolio
-- 📚 Technical Blog (Planned)
+- 📚 Technical Blog _(Planned)_
 
 ---
 
 ## 🛠 Tech Stack
 
-| Category          | Technology       |
-| ----------------- | ---------------- |
-| Framework         | Nuxt 4           |
-| Language          | TypeScript       |
-| Styling           | Tailwind CSS     |
-| Images            | Nuxt Image       |
-| Fonts             | Nuxt Fonts       |
-| i18n              | Nuxt i18n        |
-| Theme             | Color Mode       |
-| Linting           | ESLint           |
-| Formatting        | Prettier         |
-| Git Hooks         | Husky            |
-| Commit Convention | Commitlint       |
-| Deployment        | Cloudflare Pages |
+| Category              | Technology          |
+| --------------------- | ------------------- |
+| Framework             | Nuxt 4              |
+| Language              | TypeScript          |
+| Styling               | Tailwind CSS        |
+| Images                | Nuxt Image          |
+| Fonts                 | Nuxt Fonts          |
+| Internationalization  | Nuxt i18n           |
+| Theme                 | Color Mode          |
+| Linting               | ESLint              |
+| Formatting            | Prettier            |
+| Git Hooks             | Husky + lint-staged |
+| Commit Convention     | Commitlint          |
+| CI/CD                 | GitHub Actions      |
+| Dependency Management | Dependabot          |
+| Deployment            | Cloudflare Pages    |
 
 ---
 
 ## 🚀 Getting Started
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server:
+### Start development server
 
 ```bash
 npm run dev
@@ -74,7 +84,7 @@ http://localhost:3000
 | `npm run preview`      | Preview production build     |
 | `npm run generate`     | Generate static site         |
 | `npm run lint`         | Run ESLint                   |
-| `npm run lint:fix`     | Fix ESLint issues            |
+| `npm run lint:fix`     | Fix lint issues              |
 | `npm run format`       | Format source code           |
 | `npm run format:check` | Check formatting             |
 | `npm run typecheck`    | Run TypeScript type checking |
@@ -84,21 +94,37 @@ http://localhost:3000
 ## 📂 Project Structure
 
 ```text
-app/
-components/
-content/
-public/
-assets/
-types/
-utils/
-server/
-
-docs/
+.
+├── .github/
+│   ├── workflows/
+│   └── dependabot.yml
+├── app/
+├── assets/
+├── components/
+├── composables/
+├── content/
+│   ├── en/
+│   └── id/
+├── docs/
+├── layouts/
+├── middleware/
+├── pages/
+├── plugins/
+├── public/
+│   └── cv/
+├── server/
+├── shared/
+├── types/
+├── utils/
+├── package.json
+└── nuxt.config.ts
 ```
 
 ---
 
-## 🌍 Languages
+## 🌍 Internationalization
+
+This portfolio supports two languages:
 
 - 🇺🇸 English
 - 🇮🇩 Bahasa Indonesia
@@ -107,28 +133,36 @@ docs/
 
 ## 📄 Resume
 
-The latest resume will be available directly from the website.
+The latest resume can be downloaded directly from the website.
+
+- English Version
+- Indonesian Version
 
 ---
 
-## 🚀 Deployment
+## 🚀 CI/CD
 
-This website is deployed using **Cloudflare Pages**.
+Every push and pull request automatically runs the following checks:
 
-Every push to the `main` branch automatically triggers a production deployment.
+- Install dependencies
+- Type checking
+- ESLint
+- Prettier format validation
+- Production build
 
 ---
 
-## 🗺 Roadmap
+## 📈 Roadmap
 
 - [ ] Landing Page
 - [ ] About Me
-- [ ] Career Timeline
+- [ ] Career Journey
 - [ ] Skills
-- [ ] Project Portfolio
+- [ ] Featured Projects
 - [ ] AI Portfolio
 - [ ] Resume Download
 - [ ] Blog
+- [ ] Contact Page
 - [ ] SEO Optimization
 - [ ] Analytics
 
@@ -136,4 +170,4 @@ Every push to the `main` branch automatically triggers a production deployment.
 
 ## 📜 License
 
-MIT License
+This project is licensed under the MIT License.
