@@ -23,8 +23,62 @@
       </nav>
 
       <div class="hidden items-center gap-2 md:flex">
-        <LanguageSwitcher />
+        <div
+          class="flex items-center gap-1 rounded-full border border-slate-300/80 bg-white/80 p-1 dark:border-slate-700 dark:bg-slate-900/60"
+        >
+          <NuxtLink
+            :to="switchLocalePath('en')"
+            class="rounded-full px-3 py-2 text-sm font-semibold transition"
+            :class="
+              currentLocale === 'en'
+                ? 'bg-brand-600 text-white'
+                : 'text-slate-600 hover:text-brand-700 dark:text-slate-300 dark:hover:text-brand-300'
+            "
+          >
+            EN
+          </NuxtLink>
+          <NuxtLink
+            :to="switchLocalePath('id')"
+            class="rounded-full px-3 py-2 text-sm font-semibold transition"
+            :class="
+              currentLocale === 'id'
+                ? 'bg-brand-600 text-white'
+                : 'text-slate-600 hover:text-brand-700 dark:text-slate-300 dark:hover:text-brand-300'
+            "
+          >
+            ID
+          </NuxtLink>
+        </div>
         <ThemeSwitcher />
+      </div>
+
+      <div class="flex items-center gap-2 md:hidden">
+        <div
+          class="flex items-center gap-1 rounded-full border border-slate-300/80 bg-white/80 p-1 dark:border-slate-700 dark:bg-slate-900/60"
+        >
+          <NuxtLink
+            :to="switchLocalePath('en')"
+            class="rounded-full px-2.5 py-1.5 text-xs font-semibold transition"
+            :class="
+              currentLocale === 'en'
+                ? 'bg-brand-600 text-white'
+                : 'text-slate-600 hover:text-brand-700 dark:text-slate-300 dark:hover:text-brand-300'
+            "
+          >
+            EN
+          </NuxtLink>
+          <NuxtLink
+            :to="switchLocalePath('id')"
+            class="rounded-full px-2.5 py-1.5 text-xs font-semibold transition"
+            :class="
+              currentLocale === 'id'
+                ? 'bg-brand-600 text-white'
+                : 'text-slate-600 hover:text-brand-700 dark:text-slate-300 dark:hover:text-brand-300'
+            "
+          >
+            ID
+          </NuxtLink>
+        </div>
       </div>
 
       <button
@@ -44,7 +98,11 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const route = useRoute()
+const switchLocalePath = useSwitchLocalePath()
 const isOpen = ref(false)
+
+const currentLocale = computed(() => (route.path.startsWith('/id') ? 'id' : 'en'))
 
 const links = computed(() => [
   { label: t('layout.nav.home'), href: '#home' },

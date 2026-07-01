@@ -1,22 +1,21 @@
 <template>
-  <button
-    type="button"
-    class="inline-flex items-center gap-2 rounded-lg border border-slate-300/80 bg-white/80 px-3 py-2 text-sm font-medium text-slate-700 backdrop-blur-sm transition hover:border-brand-300 hover:text-brand-700 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-300"
-    @click="toggleLocale"
+  <NuxtLink
+    :to="targetLocalePath"
+    class="inline-flex items-center gap-2 rounded-full border border-brand-300/70 bg-brand-50 px-3 py-2 text-sm font-semibold text-brand-700 backdrop-blur-sm transition hover:bg-brand-100 dark:border-brand-500/50 dark:bg-brand-950/40 dark:text-brand-200 dark:hover:bg-brand-950/60"
   >
     <Icon name="i-lucide-languages" class="size-4" />
+    <span>{{ t('layout.switchLanguage') }}</span>
     {{ localeLabel }}
-  </button>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
 const { locale, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 
 const localeLabel = computed(() =>
   locale.value === 'en' ? t('layout.languageShort.id') : t('layout.languageShort.en'),
 )
 
-const toggleLocale = () => {
-  locale.value = locale.value === 'en' ? 'id' : 'en'
-}
+const targetLocalePath = computed(() => switchLocalePath(locale.value === 'en' ? 'id' : 'en'))
 </script>

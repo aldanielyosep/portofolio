@@ -48,5 +48,35 @@
         "email": "Email"
       }
     }
+  },
+  "about": {
+    "kicker": "About Me",
+    "title": "Building reliable systems and growing teams that deliver consistently",
+    "summary": "Engineering Manager with hands-on experience in designing and building scalable backend systems, leading cross-functional teams, and fostering strong engineering practices. Focused on practical software architecture, workflow automation, and the thoughtful adoption of AI to enhance developer productivity",
+    "experience": {
+      "label": "Experience",
+      "value": "{years} years, since July 2015",
+      "description": "Started my professional journey in July 2015 and have continued growing through backend engineering, platform work, and people leadership."
+    },
+    "position": {
+      "label": "Current Position",
+      "value": "Engineering Manager",
+      "description": "I lead engineering execution with a focus on clarity, reliability, and outcomes that matter for the business and the team."
+    },
+    "company": {
+      "label": "Current Company",
+      "value": "Kawan Lama Group",
+      "description": "I currently work at Kawan Lama Group, where I help teams build dependable systems and improve delivery quality."
+    },
+    "philosophy": {
+      "label": "Philosophy",
+      "value": "Build systems, not heroes.",
+      "description": "Great software should be sustainable, observable, and easy for a team to evolve together over time."
+    },
+    "funFact": {
+      "label": "Fun Fact",
+      "value": "Coffee enthusiast",
+      "description": "I enjoy exploring espresso brewing and the craft behind a good cup of coffee."
+    }
   }
 }

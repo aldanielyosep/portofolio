@@ -48,5 +48,35 @@
         "email": "Email"
       }
     }
+  },
+  "about": {
+    "kicker": "Tentang Saya",
+    "title": "Membangun sistem yang andal dan mengembangkan tim yang konsisten memberikan hasil",
+    "summary": "Saya adalah Engineering Manager dengan pengalaman langsung dalam merancang dan membangun backend system yang scalable, memimpin tim lintas fungsi, serta mendorong standar engineering yang tinggi. Fokus saya adalah membangun arsitektur yang praktis, mengotomatisasi proses, dan meningkatkan produktivitas developer melalui pemanfaatan AI secara bijak.",
+    "experience": {
+      "label": "Pengalaman",
+      "value": "{years} tahun, sejak Juli 2015",
+      "description": "Saya memulai perjalanan profesional pada Juli 2015 dan terus berkembang melalui backend engineering, platform work, dan kepemimpinan tim."
+    },
+    "position": {
+      "label": "Posisi Saat Ini",
+      "value": "Engineering Manager",
+      "description": "Saya memimpin eksekusi engineering dengan fokus pada kejelasan, keandalan, dan hasil yang berdampak bagi bisnis serta tim."
+    },
+    "company": {
+      "label": "Perusahaan Saat Ini",
+      "value": "Kawan Lama Group",
+      "description": "Saat ini saya bekerja di Kawan Lama Group, membantu tim membangun sistem yang andal dan meningkatkan kualitas delivery."
+    },
+    "philosophy": {
+      "label": "Philosophy",
+      "value": "Build systems, not heroes.",
+      "description": "Software yang hebat harus berkelanjutan, mudah diamati, dan mudah dikembangkan bersama oleh tim dari waktu ke waktu."
+    },
+    "funFact": {
+      "label": "Fun Fact",
+      "value": "Pecinta kopi",
+      "description": "Saya senang mengeksplorasi espresso brewing dan seni di balik secangkir kopi yang baik."
+    }
   }
 }
